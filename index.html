@@ -1,0 +1,24 @@
+<!doctype html>
+<html ng-app="friends">
+<head>
+    <script src="vendor/angular.min.js"></script>
+    <script src="js/friends.js"></script>
+    <link href="vendor/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/friends.css">
+</head>
+<body ng-controller="friendsCtrl">
+<div>
+    <div class="im-centered">
+        <div class="row">
+            <h1>Type Your Name</h1>
+        </div>
+        <div class="input">
+            <input class="form-control" style="text-align: center" autofocus type="text" ng-model="name">
+        </div>
+        <div class="row">
+            <ng-friends></ng-friends>
+        </div>
+    </div>
+</div>
+</body>
+</html>
